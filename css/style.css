@@ -1,0 +1,85 @@
+body{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 130%;
+}
+header {
+  background-color: plum;
+  border-radius: 8px 8px 0px 0px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+  background-color: greenyellow;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+nav a {
+  text-decoration: none;
+  color: darkgreen;
+  font-weight: bold;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 10px;
+}
+
+nav a:hover {
+  background-color: white;
+}
+
+img {
+  float: left;
+  margin-right: 10px;
+  border: 3px solid black;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#main1 {
+  background-color: rgb(219, 184, 219);
+  margin-left: 230px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-around;
+  align-items: start;
+  row-gap: 20px;
+  background-color: rgb(219, 184, 219);
+  margin-bottom: 80px;
+}
+
+.grid img {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 15px;
+  margin-bottom: 80px;
+}
+
+.flex img {
+  width: 40%;
+}
+
+footer {
+  clear: both;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: greenyellow;
+}
+
