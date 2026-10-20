@@ -1,5 +1,5 @@
 body{
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 130%;
 }
 header {
@@ -74,12 +74,11 @@ h1 {
 }
 
 footer {
-  clear: both;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
+  background-color: greenyellow;
+}
+
+#f1{
+  margin-left: 230px;
   background-color: greenyellow;
 }
 
