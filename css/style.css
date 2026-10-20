@@ -4,7 +4,11 @@ body{
 }
 header {
   background-color: plum;
-  border-radius: 8px 8px 0px 0px;
+  padding: 5px;
+}
+
+p {
+  line-height: 1.6;
 }
 
 nav ul {
@@ -31,54 +35,19 @@ nav a:hover {
 }
 
 img {
-  float: left;
   margin-right: 10px;
-  border: 3px solid black;
-  padding: 5px;
-  border-radius: 10px;
+  margin-top: 10px;
 }
 
 h1 {
   text-align: center;
 }
 
-#main1 {
-  background-color: rgb(219, 184, 219);
-  margin-left: 230px;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 40% 40%;
-  justify-content: space-around;
-  align-items: start;
-  row-gap: 20px;
-  background-color: rgb(219, 184, 219);
-  margin-bottom: 80px;
-}
-
-.grid img {
-  width: 100%;
-}
-
-.flex {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  row-gap: 15px;
-  margin-bottom: 80px;
-}
-
-.flex img {
-  width: 40%;
+main {
+  background-color: lightblue;
 }
 
 footer {
-  background-color: greenyellow;
-}
-
-#f1{
-  margin-left: 230px;
   background-color: greenyellow;
 }
 
