@@ -41,6 +41,10 @@ h1 {
   text-align: center;
 }
 
+div > img {
+  width: 20%;
+}
+
 main {
   background-color: lightblue;
 }
