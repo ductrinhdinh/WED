@@ -7,6 +7,10 @@ header {
   border-radius: 8px 8px 0px 0px;
 }
 
+#content {
+  text-decoration: none;
+}
+
 nav ul {
   display: flex;
   justify-content: space-evenly;
@@ -31,7 +35,6 @@ nav a:hover {
 }
 
 img {
-  float: left;
   margin-right: 10px;
   border: 3px solid black;
   padding: 5px;
@@ -44,7 +47,6 @@ h1 {
 
 #main1 {
   background-color: rgb(219, 184, 219);
-  margin-left: 230px;
 }
 
 .grid {
@@ -54,7 +56,7 @@ h1 {
   align-items: start;
   row-gap: 20px;
   background-color: rgb(219, 184, 219);
-  margin-bottom: 80px;
+  margin-bottom: 30px;
 }
 
 .grid img {
@@ -66,19 +68,29 @@ h1 {
   flex-wrap: wrap;
   justify-content: space-evenly;
   row-gap: 15px;
-  margin-bottom: 80px;
+  margin-bottom: 30px;
 }
 
 .flex img {
-  width: 40%;
+  width: 20%;
+}
+
+.flex img:nth-child(even) {
+  border-radius: 40px;
+  border-color: red;
+}
+.grid img:nth-child(odd) {
+  border-color: red;
+}
+
+.flex img:nth-child(even):hover {
+  transform: scale(1.1) ;
+  opacity: 0.9;
 }
 
 footer {
   background-color: greenyellow;
-}
-
-#f1{
-  margin-left: 230px;
-  background-color: greenyellow;
+  padding: 15px;
+  text-align: center;
 }
 
