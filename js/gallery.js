@@ -15,3 +15,13 @@ function unDo() {
     image.style.backgroundImage = "url('')";
     image.textContent = "Image below to display here.";
 }
+
+function addTabFocus() {
+    console.log("Page loaded. Adding keyboard access.");
+
+    var pictures = document.querySelectorAll(".preview");
+
+    for (var i = 0; i < pictures.length; i++) {
+        pictures[i].setAttribute("tabindex", "0");
+    }
+}
