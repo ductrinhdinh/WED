@@ -36,7 +36,7 @@ main {
 
 /* Các ô màu mặc định trên Mobile */
 .color-box {
-    height: 300px;
+    width: 90%; 
     background-color: #fff;
     padding: 10px;
     border-radius: 8px;
