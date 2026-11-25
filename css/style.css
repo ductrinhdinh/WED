@@ -1,0 +1,115 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #dedede;
+    color: #222222;
+    padding: 5px;
+    margin: 15px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-family:Arial, sans-serif;
+    font-size: 1.95em;
+}
+
+h2 {
+    text-align: center;
+}
+
+li {
+    margin-top: 20px;
+}
+
+/* ===== MOBILE VIEW: MOBILE FIRST ===== */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+figure {
+    font-size: 24px;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+    background-color: #ffffff;
+    color: #222222;
+    border: 3px solid #333333;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.label {
+    text-align: center;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+}
+
+/* ===== TABLET VIEW: 772px AND ABOVE ===== */
+@media screen and (min-width: 772px) {
+    .grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    figure {
+        border-radius: 50%;
+    }
+
+    figure:last-child {
+        grid-column: 1 / span 2;
+    }
+}
+
+/* ===== LARGE SCREEN VIEW: 992px AND ABOVE ===== */
+@media screen and (min-width: 992px) {
+    figure {
+        border-radius: 0;
+    }
+
+    figure:nth-child(3n) {
+        grid-column: 1 / span 2;
+    }
+}
+
+/* ===== REDUCED MOTION PREFERENCE ===== */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* ===== DARK COLOR SCHEME ===== */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: #f5f5f5;
+    }
+
+    figure {
+        background-color: #252525;
+        color: #fff2a8;
+        border-color: #000000;
+    }
+}
+
